@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_261" class="java.beans.XMLDecoder">
+ <object class="Trello.BoardConcrete" id="BoardConcrete0">
+  <void property="boardName">
+   <string>board</string>
+  </void>
+  <void property="lists">
+   <void method="add">
+    <object class="Trello.ListConcrete" id="ListConcrete0">
+     <void property="cards">
+      <void method="add">
+       <object class="Trello.CardConcrete" id="CardConcrete0">
+        <void property="cardName">
+         <string>card</string>
+        </void>
+        <void property="components">
+         <void method="add">
+          <object class="Trello.ComponentChecklist"/>
+         </void>
+         <void method="add">
+          <object class="Trello.ComponentDescription"/>
+         </void>
+        </void>
+        <void property="labels">
+         <void method="add">
+          <string>anotherlabel</string>
+         </void>
+         <void method="add">
+          <string>label</string>
+         </void>
+        </void>
+        <void property="members">
+         <void method="clear"/>
+         <void method="add">
+          <object class="Trello.UserConcrete">
+           <void property="password">
+            <string>Jacob</string>
+           </void>
+           <void property="username">
+            <string>Ballard</string>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object class="Trello.UserConcrete" id="UserConcrete0">
+           <void property="boards">
+            <void method="add">
+             <object idref="BoardConcrete0"/>
+            </void>
+           </void>
+           <void property="password">
+            <string>Ballard</string>
+           </void>
+           <void property="username">
+            <string>Jacob</string>
+           </void>
+          </object>
+         </void>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="Trello.CardConcrete" id="CardConcrete1">
+        <void property="cardName">
+         <string>card</string>
+        </void>
+        <void property="components">
+         <void method="add">
+          <object class="Trello.ComponentChecklist"/>
+         </void>
+         <void method="add">
+          <object class="Trello.ComponentDescription"/>
+         </void>
+        </void>
+        <void property="labels">
+         <void method="add">
+          <string>anotherlabel</string>
+         </void>
+         <void method="add">
+          <string>label</string>
+         </void>
+        </void>
+        <void property="members">
+         <void method="clear"/>
+         <void method="add">
+          <object class="Trello.UserConcrete">
+           <void property="password">
+            <string>Jacob</string>
+           </void>
+           <void property="username">
+            <string>Ballard</string>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object idref="UserConcrete0"/>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="listName">
+      <string>list</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="Trello.ListConcrete" id="ListConcrete1">
+     <void property="cards">
+      <void method="add">
+       <object class="Trello.CardConcrete" id="CardConcrete2">
+        <void property="cardName">
+         <string>card</string>
+        </void>
+        <void property="components">
+         <void method="add">
+          <object class="Trello.ComponentChecklist"/>
+         </void>
+         <void method="add">
+          <object class="Trello.ComponentDescription"/>
+         </void>
+        </void>
+        <void property="labels">
+         <void method="add">
+          <string>anotherlabel</string>
+         </void>
+         <void method="add">
+          <string>label</string>
+         </void>
+        </void>
+        <void property="members">
+         <void method="clear"/>
+         <void method="add">
+          <object class="Trello.UserConcrete">
+           <void property="password">
+            <string>Jacob</string>
+           </void>
+           <void property="username">
+            <string>Ballard</string>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object idref="UserConcrete0"/>
+         </void>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="Trello.CardConcrete" id="CardConcrete3">
+        <void property="cardName">
+         <string>card</string>
+        </void>
+        <void property="components">
+         <void method="add">
+          <object class="Trello.ComponentChecklist"/>
+         </void>
+         <void method="add">
+          <object class="Trello.ComponentDescription"/>
+         </void>
+        </void>
+        <void property="labels">
+         <void method="add">
+          <string>anotherlabel</string>
+         </void>
+         <void method="add">
+          <string>label</string>
+         </void>
+        </void>
+        <void property="members">
+         <void method="clear"/>
+         <void method="add">
+          <object class="Trello.UserConcrete">
+           <void property="password">
+            <string>Jacob</string>
+           </void>
+           <void property="username">
+            <string>Ballard</string>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object idref="UserConcrete0"/>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="listName">
+      <string>list</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="Trello.ListConcrete" id="ListConcrete2">
+     <void property="cards">
+      <void method="add">
+       <object class="Trello.CardConcrete" id="CardConcrete4">
+        <void property="cardName">
+         <string>card</string>
+        </void>
+        <void property="components">
+         <void method="add">
+          <object class="Trello.ComponentChecklist"/>
+         </void>
+         <void method="add">
+          <object class="Trello.ComponentDescription"/>
+         </void>
+        </void>
+        <void property="labels">
+         <void method="add">
+          <string>anotherlabel</string>
+         </void>
+         <void method="add">
+          <string>label</string>
+         </void>
+        </void>
+        <void property="members">
+         <void method="clear"/>
+         <void method="add">
+          <object class="Trello.UserConcrete">
+           <void property="password">
+            <string>Jacob</string>
+           </void>
+           <void property="username">
+            <string>Ballard</string>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object idref="UserConcrete0"/>
+         </void>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="Trello.CardConcrete" id="CardConcrete5">
+        <void property="cardName">
+         <string>card</string>
+        </void>
+        <void property="components">
+         <void method="add">
+          <object class="Trello.ComponentChecklist"/>
+         </void>
+         <void method="add">
+          <object class="Trello.ComponentDescription"/>
+         </void>
+        </void>
+        <void property="labels">
+         <void method="add">
+          <string>anotherlabel</string>
+         </void>
+         <void method="add">
+          <string>label</string>
+         </void>
+        </void>
+        <void property="members">
+         <void method="clear"/>
+         <void method="add">
+          <object class="Trello.UserConcrete">
+           <void property="password">
+            <string>Jacob</string>
+           </void>
+           <void property="username">
+            <string>Ballard</string>
+           </void>
+          </object>
+         </void>
+         <void method="add">
+          <object idref="UserConcrete0"/>
+         </void>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="listName">
+      <string>list</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="owner">
+   <object idref="UserConcrete0"/>
+  </void>
+  <void property="uniqueID">
+   <int>0</int>
+  </void>
+  <void property="users">
+   <void method="clear"/>
+   <void method="add">
+    <object idref="UserConcrete0"/>
+   </void>
+  </void>
+ </object>
+</java>

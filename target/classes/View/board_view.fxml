@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.BoardController">
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="saveBoardMenuItem" mnemonicParsing="false" onAction="#saveBoard" text="Save Board" />
+                  <MenuItem fx:id="exitBoardMenuItem" mnemonicParsing="false" onAction="#exitBoard" text="Exit Board" />
+                  <MenuItem fx:id="renameBoardMenuItem" mnemonicParsing="false" onAction="#renameBoard" text="Rename Board" />
+                  <MenuItem fx:id="deleteBoardMenuItem" mnemonicParsing="false" onAction="#deleteBoard" text="Delete Board" />
+                  <MenuItem mnemonicParsing="false" text="Save to Desktop" />
+                  <MenuItem mnemonicParsing="false" text="Send as Email Attachment" />
+            </items>
+          </Menu>
+          <Menu fx:id="listMenu" mnemonicParsing="false" text="Lists">
+            <items>
+              <MenuItem fx:id="addListMenuItem" mnemonicParsing="false" onAction="#addList" text="Add" />
+                  <MenuItem fx:id="deleteListMenuItem" mnemonicParsing="false" onAction="#deleteList" text="Delete" />
+                  <MenuItem fx:id="renameListMenuItem" mnemonicParsing="false" onAction="#renameList" text="Rename" />
+            </items>
+          </Menu>
+            <Menu fx:id="cardMenu" mnemonicParsing="false" text="Cards">
+              <items>
+                <MenuItem fx:id="addCardMenuItem" mnemonicParsing="false" onAction="#addCard" text="Add" />
+                  <MenuItem fx:id="deleteCardMenuItem" mnemonicParsing="false" onAction="#deleteCard" text="Delete" />
+                  <MenuItem fx:id="renameCardMenuItem" mnemonicParsing="false" onAction="#renameCard" text="Rename" />
+                  <MenuItem fx:id="reorderCardMenuItem" mnemonicParsing="false" onAction="#reorderCard" text="Reorder" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Members">
+              <items>
+                <MenuItem fx:id="addMemberMenuItem" mnemonicParsing="false" onAction="#addMember" text="Add Member" />
+                  <MenuItem fx:id="removeMemberMenuItem" mnemonicParsing="false" onAction="#removeMember" text="Remove Member" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <HBox fx:id="boardHBox" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

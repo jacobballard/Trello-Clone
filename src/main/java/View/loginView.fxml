@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginController">
+   <children>
+      <TitledPane animated="false" layoutY="-39.0" prefHeight="390.0" prefWidth="409.0" text="Trello">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Serverhost:" translateX="70.0" translateY="50.0" wrappingWidth="67.892578125">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Text>
+                  <ChoiceBox fx:id="serverSelectionDropdown" prefWidth="150.0" translateX="180.0" translateY="30.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" textOrigin="CENTER" translateX="70.0" translateY="100.0" wrappingWidth="55.892578125">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Text>
+                  <TextField fx:id="usernameInput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="166.0" translateY="30.0">
+                     <VBox.margin>
+                        <Insets left="175.0" top="50.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" textOrigin="CENTER" translateX="70.0" translateY="50.0" wrappingWidth="55.892578125">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Text>
+                  <PasswordField fx:id="passwordInput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="166.0">
+                     <VBox.margin>
+                        <Insets left="175.0" top="30.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginTapped" prefHeight="20.0" prefWidth="56.0" text="Log in">
+                     <VBox.margin>
+                        <Insets left="170.0" top="40.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="errorLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" text="Wrong Username or Password!">
+                     <VBox.margin>
+                        <Insets left="120.0" top="40.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

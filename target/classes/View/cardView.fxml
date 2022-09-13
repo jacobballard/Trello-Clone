@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.CardController">
+   <left>
+      <VBox fx:id="labelsVBox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Card Labels:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="editLabelsButton" mnemonicParsing="false" onAction="#editLabelsButtonTapped" text="Edit Labels">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets left="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox fx:id="checklistVBox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Checklist: ">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="editChecklistButton" mnemonicParsing="false" onAction="#editChecklistButtonTapped" text="Edit Checklist">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <VBox fx:id="descriptionVBox" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Card Description" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="editDescriptionButton" mnemonicParsing="false" onAction="#editDescriptionButtonTapped" text="Edit Description">
+               <VBox.margin>
+                  <Insets left="100.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox prefHeight="110.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="cardTitleLabel" text="Title">
+               <VBox.margin>
+                  <Insets left="275.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="editTitleButton" mnemonicParsing="false" onAction="#editTitleButtonTapped" text="Edit Title">
+               <VBox.margin>
+                  <Insets left="285.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonTapped" text="Exit" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
